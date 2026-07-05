@@ -20,8 +20,8 @@ class ZernioBillingError extends Error {
 }
 
 function requireApiKey() {
-  const key = process.env.ZERNIO_API_KEY;
-  if (!key) throw new Error('Missing required environment variable: ZERNIO_API_KEY');
+  const key = process.env.sk_efb6e47f5ef22920c4c227ed88adbc67611301f0241a37a27a3bd17db348206c;
+  if (!key) throw new Error('Missing required environment variable: sk_efb6e47f5ef22920c4c227ed88adbc67611301f0241a37a27a3bd17db348206c');
   return key;
 }
 
