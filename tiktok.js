@@ -25,8 +25,8 @@ function requireEnv(name) {
  * TikTok Developer Portal (Manage apps > your app > Login Kit).
  */
 function buildAuthorizeUrl({ state, scope }) {
-  const clientKey = requireEnv('TIKTOK_CLIENT_KEY');
-  const redirectUri = requireEnv('TIKTOK_REDIRECT_URI');
+  const clientKey = requireEnv('aw2wpejprl1319dr');
+  const redirectUri = requireEnv('https://kahiincfmmiakmllfommanokdeepkecd.chromiumapp.org/');
 
   const params = new URLSearchParams({
     client_key: clientKey,
@@ -44,9 +44,9 @@ function buildAuthorizeUrl({ state, scope }) {
  * for an access_token + refresh_token. Server-side only.
  */
 async function exchangeCodeForToken(code) {
-  const clientKey = requireEnv('TIKTOK_CLIENT_KEY');
-  const clientSecret = requireEnv('TIKTOK_CLIENT_SECRET');
-  const redirectUri = requireEnv('TIKTOK_REDIRECT_URI');
+  const clientKey = requireEnv('aw2wpejprl1319dr');
+  const clientSecret = requireEnv('RB9zGA2GzAIDxxnr9zTdQHzqfrUoFfpe');
+  const redirectUri = requireEnv('https://kahiincfmmiakmllfommanokdeepkecd.chromiumapp.org/');
 
   const body = new URLSearchParams({
     client_key: clientKey,
@@ -74,8 +74,8 @@ async function exchangeCodeForToken(code) {
  * because it needs client_secret.
  */
 async function refreshAccessToken(refreshToken) {
-  const clientKey = requireEnv('TIKTOK_CLIENT_KEY');
-  const clientSecret = requireEnv('TIKTOK_CLIENT_SECRET');
+  const clientKey = requireEnv('aw2wpejprl1319dr');
+  const clientSecret = requireEnv('RB9zGA2GzAIDxxnr9zTdQHzqfrUoFfpe');
 
   const body = new URLSearchParams({
     client_key: clientKey,
@@ -101,8 +101,8 @@ async function refreshAccessToken(refreshToken) {
  * Revokes a token (e.g. when the user disconnects their account).
  */
 async function revokeToken(accessToken) {
-  const clientKey = requireEnv('TIKTOK_CLIENT_KEY');
-  const clientSecret = requireEnv('TIKTOK_CLIENT_SECRET');
+  const clientKey = requireEnv('aw2wpejprl1319dr');
+  const clientSecret = requireEnv('RB9zGA2GzAIDxxnr9zTdQHzqfrUoFfpe');
 
   const body = new URLSearchParams({
     client_key: clientKey,
